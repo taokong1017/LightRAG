@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lightrag"
+version = "1.0.0"
+authors = [
+  { name="王松", email="taokong1017@163.com" }
+]
+description = "lightrag: light retrieval-augmented generation"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp",
+    "configparser",
+    "json_repair",
+    "nano-vectordb",
+    "numpy>=1.24.0,<3.0.0",
+    "packaging",
+    "pandas>=2.0.0,<2.4.0",
+    "pipmaster",
+    "pydantic",
+    "pypinyin",
+    "python-dotenv",
+    "setuptools",
+    "tenacity",
+    "tiktoken",
+]
+
+[tool.setuptools.packages.find]
+include = ["lightrag*"]
